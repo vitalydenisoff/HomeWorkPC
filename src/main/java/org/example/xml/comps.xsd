@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/comps"
+        xmlns:tns="http://www.example.com/comps" elementFormDefault="qualified">
+
+    <element name="devices">
+        <complexType>
+            <sequence>
+                <element name="device" type="tns:device" maxOccurs="1"/>
+            </sequence>
+        </complexType>
+    </element>
+    <complexType name="device">
+        <sequence>
+            <element name="price" type="nonNegativeInteger"/>
+            <element name="type" type="tns:Type"/>
+            <element name="critical"/>
+        </sequence>
+        <attribute name="device" use="required">
+            <simpleType>
+                <restriction base="string">
+                    <enumeration value="powerPack"/>
+                    <enumeration value="monitor"/>
+                    <enumeration value="harddrive"/>
+                </restriction>
+            </simpleType>
+        </attribute>
+    </complexType>
+
+    <complexType name="Type">
+        <sequence>
+            <element name="location">
+            <restriction base="string">
+                <enumeration value="Local"/>
+                <enumeration value="Perefirial"/>
+            </restriction>
+            </element>
+            <element name="powerConsum" type="nonNegativeInteger"/>
+            <element name="cooler" type="boolean"/>
+            <element name="port" type="string">
+                <restriction base="string">
+                    <enumeration value="VGA"/>
+                    <enumeration value="Com"/>
+                    <enumeration value="USB"/>
+                    <enumeration value="LPT"/>
+                </restriction>
+            </element>
+        </sequence>
+    </complexType>
+</schema>
