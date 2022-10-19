@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<devices xmlns="http://www.example.org/xml/comps"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.example.org/stamps comps.xsd">
+
+   <device name="powerPack1" origin="China">
+       <price>50</price>
+       <type>
+           <location>Local</location>
+           <powerConsum>600</powerConsum>
+           <cooler>Yes</cooler>
+           <port>No</port>
+       </type>
+       <critical>Yes</critical>
+   </device>
+    <device name="Monitor" origin="China">
+        <price>350</price>
+        <type>
+            <location>Perefirial</location>
+            <powerConsum>75</powerConsum>
+            <cooler>No</cooler>
+            <port>VGA</port>
+        </type>
+    </device>
+
+
+
+</devices>
