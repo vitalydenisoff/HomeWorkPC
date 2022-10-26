@@ -6,7 +6,7 @@
     <element name="devices">
         <complexType>
             <sequence>
-                <element name="device" type="tns:device" maxOccurs="1"/>
+                <element name="device" type="tns:device" minOccurs="1"/>
             </sequence>
         </complexType>
     </element>

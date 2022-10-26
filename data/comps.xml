@@ -9,20 +9,20 @@
        <type>
            <location>Local</location>
            <powerConsum>600</powerConsum>
-           <cooler>True</cooler>
-           <port>No</port>
+           <cooler>true</cooler>
+           <port>no</port>
        </type>
-       <critical>True</critical>
+       <critical>true</critical>
    </device>
     <device name="monitor" origin="China">
         <price>350</price>
         <type>
             <location>Perefirial</location>
             <powerConsum>75</powerConsum>
-            <cooler>False</cooler>
+            <cooler>false</cooler>
             <port>VGA</port>
         </type>
-        <critical>False</critical>
+        <critical>false</critical>
     </device>
 
 
