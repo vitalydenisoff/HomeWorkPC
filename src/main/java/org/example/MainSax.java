@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.parser.sax.CompsSaxBuilder;
+
 import java.io.IOException;
 
 public class MainSax {

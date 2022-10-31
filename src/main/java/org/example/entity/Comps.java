@@ -2,8 +2,6 @@ package org.example.entity;
 
 import org.apache.maven.surefire.shared.compress.archivers.dump.DumpArchiveEntry;
 
-import java.lang.reflect.Type;
-
 public class Comps {
     private String device;
     private Integer price;
@@ -46,4 +44,15 @@ public class Comps {
     }
 
 
+    public void getLocation(String data) {
+    }
+
+    public void getPowerconsum(String data) {
+    }
+
+    public void getCooler(String data) {
+    }
+
+    public Type getPort() {
+    }
 }

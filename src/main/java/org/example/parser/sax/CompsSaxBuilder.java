@@ -55,4 +55,10 @@ public class CompsSaxBuilder {
             e.printStackTrace();
         }
     }
+
+    public void buildSetComps(String s) {
+    }
+
+    public boolean getComps() {
+    }
 }

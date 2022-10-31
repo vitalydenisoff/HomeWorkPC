@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <devices xmlns="http://www.example.org/Comps"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.example.org/stamps comps.xsd">
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.example.org/stamps comps.xsd
+http://www.example.org/Comps ">
 
-   <device name="powerPack" origin="China">
-       <price>50</price>
-       <type>
-           <location>Local</location>
-           <powerConsum>600</powerConsum>
-           <cooler>true</cooler>
-           <port>no</port>
-       </type>
-       <critical>true</critical>
-   </device>
+    <device name="powerPack" origin="China">
+        <price>50</price>
+        <type>
+            <location>Local</location>
+            <powerConsum>600</powerConsum>
+            <cooler>true</cooler>
+            <port>no</port>
+        </type>
+        <critical>true</critical>
+    </device>
     <device name="monitor" origin="China">
         <price>350</price>
         <type>
@@ -24,7 +25,26 @@
         </type>
         <critical>false</critical>
     </device>
-
+    <device name="keyboard" origin="China">
+        <price>50</price>
+        <type>
+            <location>Local</location>
+            <powerConsum>600</powerConsum>
+            <cooler>true</cooler>
+            <port>no</port>
+        </type>
+        <critical>true</critical>
+    </device>
+    <device name="mouse" origin="China">
+        <price>350</price>
+        <type>
+            <location>Perefirial</location>
+            <powerConsum>75</powerConsum>
+            <cooler>false</cooler>
+            <port>VGA</port>
+        </type>
+        <critical>false</critical>
+    </device>
 
 
 </devices>
